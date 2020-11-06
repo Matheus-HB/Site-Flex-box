@@ -1,0 +1,377 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	color: #707070;
+	font-family: Arial;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+	min-height: 65px;
+	background-color: #F8F6F6;
+	width: 100%;
+}
+
+#logo{
+	width: 120px;
+	margin: 0 auto;
+}
+
+#logo img{
+	width: 100%;
+}
+
+nav{
+	display: flex;
+	margin: 0 auto;
+}
+
+nav ul li{
+	float: right;
+	list-style: none;
+}
+
+nav ul li a{
+	text-decoration: none;
+	font-size: 22px;
+}
+
+.margin{
+	margin-left: 4vw;
+}
+
+section{
+	width: 100%;
+	min-height: 50vh;
+	flex-direction: column;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-top: 5vh;
+}
+
+.border{
+	border: 2px solid #707070;
+}
+
+.content{
+	display: flex;
+	flex-direction: column;
+}
+
+section h1{
+	font-size: 24px;
+	font-weight: bold;
+	width: 100%;
+}
+
+section .content div{
+	width: 100%;
+	margin-top: 3vh;
+}
+
+section .content div p{
+	font-size: 20px;
+}
+
+#img-sobre{
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	margin-bottom: 3vh;
+}
+
+#img-sobre div{
+	width: 50%;
+	border: 2px solid #707070;
+	margin-right: 2vw;
+}
+
+#img-sobre div img{
+	width: 100%;
+}
+
+#cursos .content{
+	width: 90%;
+	text-align: center;
+	align-items: flex-end;
+	margin-left: 4.5vw;
+	margin-bottom: 3vh;
+}
+
+#cursos .content div h2{
+	background-color: #EEE8E8; 
+	padding: 4%;
+	font-size: 20px;
+}
+
+#web-design{
+	border: 0.1vw solid #58DD77;
+	border-top: 1.4vw solid #58DD77;
+}
+
+#web-design h2{
+	border-bottom: 0.1vw solid #58DD77;
+}
+
+#programacao{
+	border: 0.1vw solid #DD5861;
+	border-top: 1.4vw solid #DD5861;
+}
+
+#programacao h2{
+	border-bottom: 0.1vw solid #DD5861;
+}
+
+#banco-dados{
+	border: 0.1vw solid #5858DD;
+	border-top: 1.4vw solid #5858DD;
+}
+
+#banco-dados h2{
+	border-bottom: 0.1vw solid #5858DD;
+}
+
+#cursos .content img{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+#planos .content{
+	width: 90%;
+	margin-left: 4.5vw;
+	list-style: none;
+	margin-bottom: 3vh;
+	align-items: flex-end;
+}
+
+#planos .content div ul li{
+	list-style: none;
+}
+
+#planos .content div{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#bronze{
+	background-color: #C59B12;
+	border: 0.1vw solid #000000;
+}
+
+#prata{
+	background-color: #F7F0F1;
+	border: 0.1vw solid #000000;
+}
+
+#ouro{
+	background-color: #F1F115;
+	border: 0.1vw solid #000000;
+}
+
+#planos .content div div{
+	background-color: #FFF;
+	padding: 3.5% 0;
+}
+
+#planos ul li{
+	padding-bottom: 6%;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#planos .content div h2{
+	background-color: #EFE9E9;
+	border: 0.1vw solid #A19C9C;
+	text-align: center;
+	font-weight: bold;
+	padding: 2% 0;
+	margin: 3% 0;
+}
+
+#planos .content div span{
+	font-weight: bold;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 3%;
+}
+
+#planos .content button{
+	font-size: 20px;
+	font-weight: bold;
+	margin: 2% 0;
+	align-self: center;
+}
+
+#valores .content{
+	width: 90%;
+	margin-left: 4.5vw;
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: 3vh;
+}
+
+#valores .content div h2{
+	padding: 2%;
+	font-size: 22px;
+}
+
+#border_azul{border-left: 10px solid #4632fd;}
+#border_vermelho{border-left: 10px solid #fe2222;}
+#border_verde{border-left: 10px solid #098809;}
+#border_amarelo{border-left: 10px solid #f4fb30;}
+#border_rosa{border-left: 10px solid #f632fd;}
+#border_ciano{border-left: 10px solid #32c3fd;}
+
+#valores .content div p{
+	border-left: 10px solid #FFF;
+	padding: 2%;
+	font-size: 16px;
+}
+
+footer{
+	text-align: center;
+	padding: 1%;
+}
+@media only screen and (min-width: 1020px){
+	header{
+		flex-direction: row;
+		padding: 3vh;
+	}
+	
+	nav{
+		justify-content: flex-end;
+		width: 70vw;
+		margin-right: 5vw;
+		margin-top: 5vh;
+	}
+	
+	nav ul li a{
+		margin-left: 10vh;
+		font-weight: bold;
+	}
+	
+	.content{
+		flex-direction: row;
+	}
+	
+	#sobre .content div p{
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 3vw;
+	}
+	
+	#info{
+		margin-right: 5vw;
+	}
+	
+	#img-sobre div{
+		border: 0.1vw solid #707070;
+	}
+	
+	.border{
+		border: none;
+	}
+	
+	#cursos .content{
+		width: 100%;
+		margin-left: 0;
+	}
+	
+	#cursos .content div h2{
+		font-size: 24px;
+	}
+	
+	#web-design{
+		border-top: 1.4vw solid #58DD77;
+		border-left: 0;
+		border-bottom: 0;
+		border-right: 0;
+		margin-right: 2vw;
+	}
+
+	#programacao{
+		border-top: 1.4vw solid #DD5861;
+		border-left: 0;
+		border-bottom: 0;
+		border-right: 0;
+		margin-right: 2vw;
+	}
+
+	#banco-dados{
+		border-top: 1.4vw solid #5858DD;
+		border-left: 0;
+		border-bottom: 0;
+		border-right: 0;
+	}
+	
+	#web-design h2{
+		border-bottom: 0;
+	}
+	
+	#programacao h2{
+		border-bottom: 0;
+	}
+	
+	#banco-dados h2{
+		border-bottom: 0;
+	}
+	
+	#planos .content{
+		width: 100%;
+		margin-left: 0;
+	}
+	
+	#planos .content div{
+		padding: 1%;	
+	}
+		
+	#planos .content div span{
+		margin-left: 0;
+	}
+	
+	#bronze{
+		margin-right: 2vw;
+		border: none;
+	}
+
+	#prata{
+		margin-right: 2vw;
+	}
+	
+	#ouro{
+		border: none;
+	}
+	
+	#planos ul li{
+		padding-left: 5.5%;
+	}
+	
+	#planos .content button{
+		margin-top: 4%;
+	}
+	
+	#valores .content{
+		width: 100%;
+		margin-left: 0;
+	}
+	
+	#valores .content div{
+		width: 33%;
+		padding: 1%;
+	}
+}
+
